@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class TypeEvent extends Model
 {
     use HasFactory;
+
+    public function event()
+    {
+        return $this->belongsTo(Event::class);
+    }
 }

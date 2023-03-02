@@ -13,4 +13,19 @@ class Event extends Model
     {
         return $this->belongsToMany(User::class, 'tickets');
     }
+
+    public function typeEvent()
+    {
+        return $this->hasOne(TypeEvent::class);
+    }
+
+    public function address()
+    {
+        return $this->hasOne(Address::class);
+    }
+
+    public function statusEvent()
+    {
+        return $this->hasOne(StatusEvent::class);
+    }
 }
