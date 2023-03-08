@@ -28,4 +28,9 @@ class Event extends Model
     {
         return $this->hasOne(StatusEvent::class);
     }
+
+    public function userCreator()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
 }

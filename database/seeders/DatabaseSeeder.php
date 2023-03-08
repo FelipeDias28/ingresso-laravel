@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
             TypeUserSeeder::class,
             TypeEventSeeder::class,
             StatusEventSeeder::class,
+            AddressSeeder::class,
+            UserSeeder::class,
+            EventSeeder::class
         ]);
     }
 }

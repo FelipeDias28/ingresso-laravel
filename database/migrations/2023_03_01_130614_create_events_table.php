@@ -23,6 +23,7 @@ return new class extends Migration
             $table->foreignId('type_event_id')->constrained('type_events');
             $table->foreignId('address_id')->constrained('addresses');
             $table->foreignId('status_event_id')->constrained('status_events');
+            $table->foreignId('created_by')->constrained('users');
             $table->timestamps();
             $table->softDeletes();
         });
